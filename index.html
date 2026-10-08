@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Carnival Care — Consult top doctors online</title>
+  <meta name="description" content="Carnival Care telehealth demo: find doctors, book, consult on video, get e-prescriptions, order medicine and tests." />
+  <link rel="icon" href="assets/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="topbar" id="topbar">
+    <div class="container topbar-inner">
+      <a href="#/" class="brand" aria-label="Carnival Care home">
+        <img src="assets/carnival-care-logo.svg" alt="Carnival Care" />
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#/" data-nav="home">Find doctors</a>
+        <a href="#/dashboard" data-nav="dashboard">Patient portal</a>
+        <a href="#/doctor-portal" data-nav="doctor-portal">Doctor portal</a>
+      </nav>
+      <div class="topbar-actions">
+        <button class="icon-btn cart-btn" id="cartBtn" aria-label="Open cart">
+          <span data-icon="cart"></span>
+          <span class="badge" id="cartCount" hidden>0</span>
+        </button>
+        <a href="#/dashboard" class="user-chip" aria-label="Patient portal">
+          <span class="avatar sm" style="--h:200">AC</span>
+          <span class="user-chip-name">Arif</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="app" tabindex="-1"></main>
+
+  <footer class="footer" id="footer">
+    <div class="container footer-inner">
+      <img src="assets/carnival-care-logo.svg" alt="Carnival Care" class="footer-logo" />
+      <p>Consultation, Diagnostic, Medicine — specialized care for everyone, from anywhere.</p>
+      <p class="muted small">Interactive product demo. Doctors, patients and prices shown are fictional.</p>
+    </div>
+  </footer>
+
+  <div class="drawer-backdrop" id="drawerBackdrop" hidden></div>
+  <aside class="drawer" id="cartDrawer" aria-label="Cart" hidden></aside>
+  <div class="modal-root" id="modalRoot"></div>
+  <div class="toasts" id="toasts" aria-live="polite"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
